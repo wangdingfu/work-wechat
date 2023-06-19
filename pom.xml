@@ -4,30 +4,30 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>com.github.shuaidd</groupId>
-    <artifactId>qywx</artifactId>
+    <groupId>com.wdf</groupId>
+    <artifactId>work-wechat</artifactId>
     <packaging>pom</packaging>
-    <version>4.3.0</version>
+    <version>2.3.0</version>
     <modules>
-        <module>qywx-spring-boot-starter</module>
-        <module>qywx-spring-boot-autoconfigurator</module>
-        <module>qywx-spring-boot-api</module>
-        <module>qywx-spring-boot-model</module>
+        <module>work-wechat-spring-boot-starter</module>
+        <module>work-wechat-spring-boot-autoconfigure</module>
+        <module>work-wechat-spring-boot-api</module>
+        <module>work-wechat-spring-boot-model</module>
     </modules>
 
-    <name>qywx</name>
-    <url>https://github.com/shuaidd</url>
+    <name>work-wechat</name>
+    <url>https://github.com/wangdingfu</url>
     <description>企业微信api调用工具包</description>
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <maven.compiler.source>1.8</maven.compiler.source>
         <maven.compiler.target>1.8</maven.compiler.target>
-        <org.springframework.cloud.version>2021.0.4</org.springframework.cloud.version>
+        <org.springframework.cloud.version>Hoxton.SR12</org.springframework.cloud.version>
         <feign-jackson>10.2.0</feign-jackson>
         <commons-lang3>3.0</commons-lang3>
         <commons-collections4>4.1</commons-collections4>
-        <hutool-all>4.5.3</hutool-all>
+        <hutool-all>5.8.20</hutool-all>
         <jackson-annotations>2.9.9</jackson-annotations>
     </properties>
 
@@ -36,7 +36,7 @@
             <dependency>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-dependencies</artifactId>
-                <version>2.6.4</version>
+                <version>2.3.12.RELEASE</version>
                 <type>pom</type>
                 <scope>import</scope>
             </dependency>
@@ -70,6 +70,7 @@
                 <artifactId>commons-collections4</artifactId>
                 <version>${commons-collections4}</version>
             </dependency>
+
             <dependency>
                 <groupId>cn.hutool</groupId>
                 <artifactId>hutool-all</artifactId>
@@ -77,33 +78,33 @@
             </dependency>
 
             <dependency>
-                <groupId>com.github.shuaidd</groupId>
-                <artifactId>qywx-spring-boot-starter</artifactId>
+                <groupId>com.wdf</groupId>
+                <artifactId>work-wechat-spring-boot-starter</artifactId>
                 <version>${project.version}</version>
             </dependency>
 
             <dependency>
-                <groupId>com.github.shuaidd</groupId>
-                <artifactId>qywx-spring-boot-api</artifactId>
+                <groupId>com.wdf</groupId>
+                <artifactId>work-wechat-spring-boot-api</artifactId>
                 <version>${project.version}</version>
             </dependency>
 
             <dependency>
-                <groupId>com.github.shuaidd</groupId>
-                <artifactId>qywx-spring-boot-autoconfigurator</artifactId>
+                <groupId>com.wdf</groupId>
+                <artifactId>work-wechat-spring-boot-autoconfigure</artifactId>
                 <version>${project.version}</version>
             </dependency>
 
             <dependency>
-                <groupId>com.github.shuaidd</groupId>
-                <artifactId>qywx-spring-boot-model</artifactId>
+                <groupId>com.wdf</groupId>
+                <artifactId>work-wechat-spring-boot-model</artifactId>
                 <version>${project.version}</version>
             </dependency>
 
             <dependency>
-                <artifactId>qywx</artifactId>
-                <groupId>com.github.shuaidd</groupId>
-                <version>${project.version}</version>
+                <artifactId>work-wechat</artifactId>
+                <groupId>com.wdf</groupId>
+                <version>2.3.0</version>
             </dependency>
 
             <dependency>
@@ -196,16 +197,16 @@
     </licenses>
 
     <scm>
-        <url>https://github.com/shuaidd/qywx</url>
-        <connection>https://github.com/shuaidd/qywx.git</connection>
-        <developerConnection>https://github.com/shuaidd</developerConnection>
+        <url>https://github.com/wangdingfu/work-wechat</url>
+        <connection>https://github.com/wangdingfu/work-wechat.git</connection>
+        <developerConnection>https://github.com/wangdingfu</developerConnection>
     </scm>
 
     <developers>
         <developer>
-            <name>shuaidd</name>
-            <email>shuaidd@139.com</email>
-            <url>https://github.com/shuaidd</url>
+            <name>wangdingfu</name>
+            <email>wangdingfu1024@163.com</email>
+            <url>https://github.com/wangdingfu1024</url>
         </developer>
     </developers>
 </project>
