@@ -1,9 +1,9 @@
-package com.wdf;
+package io.github.wangdingfu;
 
-import com.wdf.dto.addressbook.DeptUser;
-import com.wdf.response.addressbook.ExportResultResponse;
-import com.wdf.resquest.CursorPageRequest;
-import com.wdf.resquest.addressbook.*;
+import io.github.wangdingfu.dto.addressbook.DeptUser;
+import io.github.wangdingfu.response.addressbook.ExportResultResponse;
+import io.github.wangdingfu.resquest.CursorPageRequest;
+import io.github.wangdingfu.resquest.addressbook.*;
 import org.junit.jupiter.api.Test;
 
 import java.util.Collections;

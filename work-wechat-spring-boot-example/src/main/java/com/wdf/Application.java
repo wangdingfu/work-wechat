@@ -1,6 +1,6 @@
-package com.wdf;
+package io.github.wangdingfu;
 
-import com.wdf.autoconfigure.EnableWeChat;
+import io.github.wangdingfu.autoconfigure.EnableWeChat;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 

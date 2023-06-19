@@ -1,8 +1,8 @@
-package com.wdf;
+package io.github.wangdingfu;
 
-import com.wdf.resquest.exmail.DeleteMailGroupRequest;
-import com.wdf.resquest.exmail.MailGroupRequest;
-import com.wdf.service.EnterpriseEmailService;
+import io.github.wangdingfu.resquest.exmail.DeleteMailGroupRequest;
+import io.github.wangdingfu.resquest.exmail.MailGroupRequest;
+import io.github.wangdingfu.service.EnterpriseEmailService;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 

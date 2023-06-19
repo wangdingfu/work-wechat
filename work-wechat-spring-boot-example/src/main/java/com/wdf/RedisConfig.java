@@ -1,6 +1,6 @@
-package com.wdf;
+package io.github.wangdingfu;
 
-import com.wdf.autoconfigure.WeChatAutoConfiguration;
+import io.github.wangdingfu.autoconfigure.WeChatAutoConfiguration;
 import lombok.RequiredArgsConstructor;
 import org.springframework.cache.CacheManager;
 import org.springframework.cache.annotation.CachingConfigurerSupport;

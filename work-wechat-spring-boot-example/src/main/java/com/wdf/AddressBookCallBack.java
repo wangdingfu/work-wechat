@@ -1,9 +1,9 @@
-package com.wdf;
+package io.github.wangdingfu;
 
-import com.wdf.callback.AbstractCallBackChain;
-import com.wdf.enums.ChangeType;
-import com.wdf.event.BaseEventData;
-import com.wdf.event.UserEventData;
+import io.github.wangdingfu.callback.AbstractCallBackChain;
+import io.github.wangdingfu.enums.ChangeType;
+import io.github.wangdingfu.event.BaseEventData;
+import io.github.wangdingfu.event.UserEventData;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Component;

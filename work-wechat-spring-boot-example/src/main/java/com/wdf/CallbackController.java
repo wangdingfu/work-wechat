@@ -1,9 +1,9 @@
-package com.wdf;
+package io.github.wangdingfu;
 
-import com.wdf.callback.AesException;
-import com.wdf.callback.WXBizJsonMsgCrypt;
-import com.wdf.event.BaseEventData;
-import com.wdf.support.CallBackManager;
+import io.github.wangdingfu.callback.AesException;
+import io.github.wangdingfu.callback.WXBizJsonMsgCrypt;
+import io.github.wangdingfu.event.BaseEventData;
+import io.github.wangdingfu.support.CallBackManager;
 import org.apache.commons.lang3.StringUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;

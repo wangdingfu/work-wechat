@@ -1,7 +1,7 @@
-package com.wdf;
+package io.github.wangdingfu;
 
-import com.wdf.event.*;
-import com.wdf.support.XMLUtil;
+import io.github.wangdingfu.event.*;
+import io.github.wangdingfu.support.XMLUtil;
 import com.google.common.collect.Lists;
 import org.apache.commons.lang3.time.DateFormatUtils;
 import org.apache.commons.lang3.time.DateUtils;

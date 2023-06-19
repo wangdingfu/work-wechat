@@ -1,8 +1,8 @@
-package com.wdf;
+package io.github.wangdingfu;
 
-import com.wdf.response.auth.AuthUserInfoResponse;
-import com.wdf.response.auth.AuthenticationResponse;
-import com.wdf.response.auth.UserSensitiveDetailResponse;
+import io.github.wangdingfu.response.auth.AuthUserInfoResponse;
+import io.github.wangdingfu.response.auth.AuthenticationResponse;
+import io.github.wangdingfu.response.auth.UserSensitiveDetailResponse;
 import org.junit.jupiter.api.Test;
 
 import java.util.List;

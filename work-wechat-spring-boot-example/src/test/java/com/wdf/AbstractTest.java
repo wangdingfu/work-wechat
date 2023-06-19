@@ -1,7 +1,7 @@
-package com.wdf;
+package io.github.wangdingfu;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
-import com.wdf.support.WeChatManager;
+import io.github.wangdingfu.support.WeChatManager;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;

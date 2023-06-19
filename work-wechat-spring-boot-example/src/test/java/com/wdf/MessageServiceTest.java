@@ -1,8 +1,8 @@
-package com.wdf;
+package io.github.wangdingfu;
 
-import com.wdf.dto.message.*;
-import com.wdf.enums.MsgType;
-import com.wdf.resquest.message.SendMessageRequest;
+import io.github.wangdingfu.dto.message.*;
+import io.github.wangdingfu.enums.MsgType;
+import io.github.wangdingfu.resquest.message.SendMessageRequest;
 import com.google.common.collect.Lists;
 import org.junit.jupiter.api.Test;
 

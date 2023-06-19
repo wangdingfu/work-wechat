@@ -1,10 +1,10 @@
-package com.wdf;
+package io.github.wangdingfu;
 
 import cn.hutool.crypto.digest.DigestUtil;
-import com.wdf.response.material.UploadByUrlResultResponse;
-import com.wdf.resquest.job.JobIdRequest;
-import com.wdf.resquest.media.UploadByUrlRequest;
-import com.wdf.service.MediaService;
+import io.github.wangdingfu.response.material.UploadByUrlResultResponse;
+import io.github.wangdingfu.resquest.job.JobIdRequest;
+import io.github.wangdingfu.resquest.media.UploadByUrlRequest;
+import io.github.wangdingfu.service.MediaService;
 import org.apache.commons.io.IOUtils;
 import org.junit.jupiter.api.Test;
 import org.springframework.http.MediaType;

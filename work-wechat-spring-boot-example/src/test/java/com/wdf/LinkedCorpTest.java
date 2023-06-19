@@ -1,4 +1,4 @@
-package com.wdf;
+package io.github.wangdingfu;
 
 import org.junit.jupiter.api.Test;
 

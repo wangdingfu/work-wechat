@@ -1,10 +1,10 @@
-package com.wdf;
+package io.github.wangdingfu;
 
-import com.wdf.dto.tool.ApplicationButton;
-import com.wdf.enums.ButtonType;
-import com.wdf.response.application.ApplicationButtonResponse;
-import com.wdf.response.application.WeChatApplicationResponse;
-import com.wdf.resquest.application.ApplicationButtonRequest;
+import io.github.wangdingfu.dto.tool.ApplicationButton;
+import io.github.wangdingfu.enums.ButtonType;
+import io.github.wangdingfu.response.application.ApplicationButtonResponse;
+import io.github.wangdingfu.response.application.WeChatApplicationResponse;
+import io.github.wangdingfu.resquest.application.ApplicationButtonRequest;
 import org.junit.jupiter.api.Test;
 
 import java.util.Collections;

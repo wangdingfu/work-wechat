@@ -1,12 +1,12 @@
-package com.wdf;
+package io.github.wangdingfu;
 
-import com.wdf.dto.kf.IntentAnswer;
-import com.wdf.dto.kf.IntentQuestion;
-import com.wdf.dto.message.MsgText;
-import com.wdf.enums.MsgType;
-import com.wdf.response.kf.*;
-import com.wdf.resquest.kf.*;
-import com.wdf.service.MediaService;
+import io.github.wangdingfu.dto.kf.IntentAnswer;
+import io.github.wangdingfu.dto.kf.IntentQuestion;
+import io.github.wangdingfu.dto.message.MsgText;
+import io.github.wangdingfu.enums.MsgType;
+import io.github.wangdingfu.response.kf.*;
+import io.github.wangdingfu.resquest.kf.*;
+import io.github.wangdingfu.service.MediaService;
 import org.junit.jupiter.api.Test;
 import org.springframework.http.MediaType;
 import org.springframework.util.ResourceUtils;

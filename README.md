@@ -2,7 +2,7 @@
 企业微信API封装
 ``` 
 <dependency>
-  <groupId>com.wdf</groupId>
+  <groupId>io.github.wangdingfu</groupId>
   <artifactId>work-wechat-spring-boot-starter</artifactId>
   <version>2.3.0</version>
 </dependency>
