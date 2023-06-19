@@ -1,6 +1,5 @@
 package com.wdf.response.externalcontact;
 
-import com.github.shuaidd.dto.message.*;
 import com.wdf.dto.message.*;
 import com.wdf.response.AbstractBaseResponse;
 

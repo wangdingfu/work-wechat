@@ -1,10 +1,10 @@
-# qywx-spring-boot-starter
+# work-wechat-spring-boot-starter
 企业微信API封装
 ``` 
 <dependency>
-  <groupId>com.github.shuaidd</groupId>
-  <artifactId>qywx-spring-boot-starter</artifactId>
-  <ver[]()sion>4.3.0</version>
+  <groupId>com.wdf</groupId>
+  <artifactId>work-wechat-spring-boot-starter</artifactId>
+  <version>2.3.0</version>
 </dependency>
 
 ```
@@ -13,7 +13,7 @@
 ``` 
 配置application.yml
 
-qywx:
+work-wechat:
   corp-id: xxxx（企业号）
   application-list:
   - secret: Kx4sovYN5C0_MEzPY0cOymwbMhGmqdA9VjMFHrAKjdE
@@ -40,7 +40,7 @@ public class WeChatTest extends BaseTest {
     }
 }
 
-实例 可以查看 qywx-spring-boot-example 模块
+实例 可以查看 work-wechat-spring-boot-example 模块
 ```
 
 ### 回调配置

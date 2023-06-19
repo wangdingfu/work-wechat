@@ -1,12 +1,10 @@
 package com.wdf.service;
 
 import com.wdf.response.addressbook.MobileHashCodeResponse;
-import com.github.shuaidd.response.externalcontact.*;
 import com.wdf.resquest.CursorPageRequest;
 import com.wdf.resquest.PageRequest;
 import com.wdf.resquest.addressbook.MobileHashCodeRequest;
 import com.wdf.resquest.addressbook.TagGroupRequest;
-import com.github.shuaidd.resquest.externalcontact.*;
 import com.wdf.response.externalcontact.*;
 import com.wdf.resquest.externalcontact.*;
 import org.springframework.stereotype.Service;

@@ -10,7 +10,7 @@ import java.util.List;
  * @author ddshuai
  * date 2019-04-03 15:47
  **/
-@ConfigurationProperties(prefix = "qywx")
+@ConfigurationProperties(prefix = "work-wechat")
 public class WeChatConfigurationProperties {
 
     /**

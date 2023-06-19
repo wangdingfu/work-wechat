@@ -25,7 +25,7 @@ public class WeChatServiceAspect {
         this.weChatManager = weChatManager;
     }
 
-    @Around("execution(* com.github.shuaidd.service.*.*(..))")
+    @Around("execution(* com.wdf.service.*.*(..))")
     public Object checkApplicationName(ProceedingJoinPoint pjp) throws Throwable {
 
         MethodSignature methodSignature = (MethodSignature) pjp.getSignature();

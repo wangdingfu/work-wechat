@@ -2,8 +2,6 @@ package com.wdf.client;
 
 import com.wdf.client.config.WeChatConfiguration;
 import com.wdf.response.BaseResponse;
-import com.github.shuaidd.response.kf.*;
-import com.github.shuaidd.resquest.kf.*;
 import com.wdf.response.kf.*;
 import com.wdf.resquest.kf.*;
 import org.springframework.cloud.openfeign.FeignClient;
@@ -17,7 +15,7 @@ import org.springframework.web.bind.annotation.RequestParam;
  * @author ddshuai
  * date 2022-08-31 22:34
  **/
-@FeignClient(name = "WeChatCallCenterClient", url = "${qywx.url:https://qyapi.weixin.qq.com}", path = "${qywx.public-path:cgi-bin}", configuration = WeChatConfiguration.class)
+@FeignClient(name = "WeChatCallCenterClient", url = "${work-wechat.url:https://qyapi.weixin.qq.com}", path = "${work-wechat.public-path:cgi-bin}", configuration = WeChatConfiguration.class)
 public interface WeChatCallCenterClient extends CommonClient {
     /**
      * 添加客服帐号

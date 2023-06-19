@@ -4,8 +4,6 @@ import com.wdf.dto.kf.IntentAnswer;
 import com.wdf.dto.kf.IntentQuestion;
 import com.wdf.dto.message.MsgText;
 import com.wdf.enums.MsgType;
-import com.github.shuaidd.response.kf.*;
-import com.github.shuaidd.resquest.kf.*;
 import com.wdf.response.kf.*;
 import com.wdf.resquest.kf.*;
 import com.wdf.service.MediaService;

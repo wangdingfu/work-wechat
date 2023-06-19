@@ -2,10 +2,6 @@ package com.wdf.client;
 
 import com.wdf.client.config.WeChatConfiguration;
 import com.wdf.response.BaseResponse;
-import com.github.shuaidd.response.tool.*;
-import com.github.shuaidd.response.wedrive.*;
-import com.github.shuaidd.resquest.tool.*;
-import com.github.shuaidd.resquest.wedrive.*;
 import com.wdf.response.tool.*;
 import com.wdf.response.wedrive.*;
 import com.wdf.resquest.tool.*;
@@ -21,7 +17,7 @@ import org.springframework.web.bind.annotation.RequestParam;
  * @author ddshuai
  * date 2022-09-01 09:37
  **/
-@FeignClient(name = "EfficiencyToolClient", url = "${qywx.url:https://qyapi.weixin.qq.com}", path = "${qywx.public-path:cgi-bin}", configuration = WeChatConfiguration.class)
+@FeignClient(name = "EfficiencyToolClient", url = "${work-wechat.url:https://qyapi.weixin.qq.com}", path = "${work-wechat.public-path:cgi-bin}", configuration = WeChatConfiguration.class)
 public interface EfficiencyToolClient extends CommonClient {
 
     /**

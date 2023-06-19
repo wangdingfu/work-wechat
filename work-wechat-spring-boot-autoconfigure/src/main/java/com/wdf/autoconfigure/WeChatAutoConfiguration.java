@@ -23,7 +23,7 @@ import java.util.Collections;
  * @author shuaidongdong
  */
 @Configuration
-@ComponentScan(basePackages = {"com.github.shuaidd.service", "com.github.shuaidd.support", "com.github.shuaidd.aspect"})
+@ComponentScan(basePackages = {"com.wdf.service", "com.wdf.support", "com.wdf.aspect"})
 @EnableConfigurationProperties(WeChatConfigurationProperties.class)
 public class WeChatAutoConfiguration implements InitializingBean {
 
@@ -40,7 +40,7 @@ public class WeChatAutoConfiguration implements InitializingBean {
     public CacheManager cacheManager() {
         ConcurrentMapCacheManager concurrentMapCacheManager = new ConcurrentMapCacheManager();
         concurrentMapCacheManager.setAllowNullValues(true);
-        concurrentMapCacheManager.setCacheNames(Collections.singletonList("qywx"));
+        concurrentMapCacheManager.setCacheNames(Collections.singletonList("work-wechat"));
         return concurrentMapCacheManager;
     }
 

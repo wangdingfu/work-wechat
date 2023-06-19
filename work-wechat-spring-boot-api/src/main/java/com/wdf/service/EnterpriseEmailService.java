@@ -4,7 +4,6 @@ import com.wdf.response.exmail.CreatePublicMailResponse;
 import com.wdf.response.exmail.MailDetailResponse;
 import com.wdf.response.exmail.MailGroupDetailResponse;
 import com.wdf.response.exmail.SearchMailGroupResponse;
-import com.github.shuaidd.resquest.exmail.*;
 import com.wdf.resquest.exmail.*;
 import org.springframework.stereotype.Service;
 

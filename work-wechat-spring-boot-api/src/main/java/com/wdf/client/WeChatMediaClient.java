@@ -20,7 +20,7 @@ import java.io.File;
  * @author ddshuai
  * date 2018-11-28 17:34
  **/
-@FeignClient(name = "weChatUploadClient", url = "${qywx.url:https://qyapi.weixin.qq.com}", path = "${qywx.public-path:cgi-bin}", configuration = MultipartSupportConfig.class)
+@FeignClient(name = "weChatUploadClient", url = "${work-wechat.url:https://qyapi.weixin.qq.com}", path = "${work-wechat.public-path:cgi-bin}", configuration = MultipartSupportConfig.class)
 public interface WeChatMediaClient extends CommonClient {
 
     /**

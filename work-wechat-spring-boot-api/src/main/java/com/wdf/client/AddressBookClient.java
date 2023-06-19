@@ -2,10 +2,8 @@ package com.wdf.client;
 
 import com.wdf.client.config.WeChatConfiguration;
 import com.wdf.response.BaseResponse;
-import com.github.shuaidd.response.addressbook.*;
 import com.wdf.response.auth.AuthenticationResponse;
 import com.wdf.resquest.CursorPageRequest;
-import com.github.shuaidd.resquest.addressbook.*;
 import com.wdf.response.addressbook.*;
 import com.wdf.resquest.addressbook.*;
 import org.springframework.cloud.openfeign.FeignClient;
@@ -19,7 +17,7 @@ import org.springframework.web.bind.annotation.RequestParam;
  * @author ddshuai
  * date 2022-09-01 09:03
  **/
-@FeignClient(name = "AddressBookClient", url = "${qywx.url:https://qyapi.weixin.qq.com}", path = "${qywx.public-path:cgi-bin}", configuration = WeChatConfiguration.class)
+@FeignClient(name = "AddressBookClient", url = "${work-wechat.url:https://qyapi.weixin.qq.com}", path = "${work-wechat.public-path:cgi-bin}", configuration = WeChatConfiguration.class)
 public interface AddressBookClient extends CommonClient {
 
     /**

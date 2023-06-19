@@ -15,7 +15,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 /**
  * 电子发票
  */
-@FeignClient(name = "ElectronicInvoiceClient", url = "${qywx.url:https://qyapi.weixin.qq.com}", path = "${qywx.public-path:cgi-bin}", configuration = WeChatConfiguration.class)
+@FeignClient(name = "ElectronicInvoiceClient", url = "${work-wechat.url:https://qyapi.weixin.qq.com}", path = "${work-wechat.public-path:cgi-bin}", configuration = WeChatConfiguration.class)
 public interface ElectronicInvoiceClient extends CommonClient {
 
     /**

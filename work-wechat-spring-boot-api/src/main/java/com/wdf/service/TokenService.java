@@ -20,7 +20,7 @@ public class TokenService extends AbstractBaseService {
      * @param applicationName 应用名称
      * @return String
      */
-    @Cacheable(value = "qywx", key = "'qywx_access_token_'+#applicationName")
+    @Cacheable(value = "work-wechat", key = "'work-wechat_access_token_'+#applicationName")
     public String getAccessToken(String applicationName) {
         if (logger.isInfoEnabled()) {
             logger.info("调用接口获取AccessToken：应用名称-{}", applicationName);
@@ -34,7 +34,7 @@ public class TokenService extends AbstractBaseService {
      *
      * @param cacheApplicationName 应用名称
      */
-    @CacheEvict(value = "qywx", key = "'qywx_access_token_'+#cacheApplicationName")
+    @CacheEvict(value = "work-wechat", key = "'work-wechat_access_token_'+#cacheApplicationName")
     public void clearAccessToken(String cacheApplicationName) {
 
     }

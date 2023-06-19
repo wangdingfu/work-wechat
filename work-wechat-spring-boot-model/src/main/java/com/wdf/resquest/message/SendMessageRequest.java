@@ -1,7 +1,6 @@
 package com.wdf.resquest.message;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
-import com.github.shuaidd.dto.message.*;
 import com.wdf.dto.message.*;
 import com.wdf.enums.MsgType;
 

@@ -1,17 +1,9 @@
 package com.wdf.client;
 
 import com.wdf.client.config.WeChatConfiguration;
-import com.github.shuaidd.response.addressbook.*;
-import com.github.shuaidd.response.kf.*;
 import com.wdf.response.material.UploadByUrlResultResponse;
-import com.github.shuaidd.response.oa.*;
-import com.github.shuaidd.response.tool.*;
-import com.github.shuaidd.resquest.addressbook.*;
 import com.wdf.resquest.job.JobIdRequest;
-import com.github.shuaidd.resquest.kf.*;
 import com.wdf.resquest.media.UploadByUrlRequest;
-import com.github.shuaidd.resquest.oa.*;
-import com.github.shuaidd.resquest.tool.*;
 import com.wdf.response.addressbook.AsyncJobResponse;
 import com.wdf.response.addressbook.ExportResultResponse;
 import com.wdf.response.addressbook.MobileHashCodeResponse;
@@ -34,7 +26,7 @@ import org.springframework.web.bind.annotation.RequestParam;
  * date 2019-04-03 15:50
  **/
 @SuppressWarnings("all")
-@FeignClient(name = "wechat", url = "${qywx.url:https://qyapi.weixin.qq.com}", path = "${qywx.public-path:cgi-bin}", configuration = WeChatConfiguration.class)
+@FeignClient(name = "wechat", url = "${work-wechat.url:https://qyapi.weixin.qq.com}", path = "${work-wechat.public-path:cgi-bin}", configuration = WeChatConfiguration.class)
 public interface WeChatClient extends CommonClient {
 
     /**

@@ -1,7 +1,6 @@
 package com.wdf.client;
 
 import com.wdf.client.config.WeChatConfiguration;
-import com.github.shuaidd.response.linkedcorp.*;
 import com.wdf.resquest.linkedcorp.LinkedCorpDeptRequest;
 import com.wdf.resquest.linkedcorp.LinkedCropUserRequest;
 import com.wdf.response.linkedcorp.*;
@@ -15,7 +14,7 @@ import org.springframework.web.bind.annotation.RequestParam;
  * @author ddshuai
  * date 2022-09-04 21:19
  **/
-@FeignClient(name = "LinkedCorpClient", url = "${qywx.url:https://qyapi.weixin.qq.com}", path = "${qywx.public-path:cgi-bin}", configuration = WeChatConfiguration.class)
+@FeignClient(name = "LinkedCorpClient", url = "${work-wechat.url:https://qyapi.weixin.qq.com}", path = "${work-wechat.public-path:cgi-bin}", configuration = WeChatConfiguration.class)
 public interface LinkedCorpClient extends CommonClient {
 
     /**

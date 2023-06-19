@@ -1,6 +1,5 @@
 package com.wdf;
 
-import com.github.shuaidd.dto.message.*;
 import com.wdf.dto.message.*;
 import com.wdf.enums.MsgType;
 import com.wdf.resquest.message.SendMessageRequest;

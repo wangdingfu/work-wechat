@@ -1,7 +1,6 @@
 package com.wdf.dto.externalcontact;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
-import com.github.shuaidd.dto.message.*;
 import com.wdf.dto.message.*;
 
 import java.util.StringJoiner;

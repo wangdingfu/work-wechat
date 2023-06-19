@@ -2,11 +2,9 @@ package com.wdf.client;
 
 import com.wdf.client.config.WeChatConfiguration;
 import com.wdf.response.BaseResponse;
-import com.github.shuaidd.response.externalcontact.*;
 import com.wdf.resquest.CursorPageRequest;
 import com.wdf.resquest.PageRequest;
 import com.wdf.resquest.addressbook.TagGroupRequest;
-import com.github.shuaidd.resquest.externalcontact.*;
 import com.wdf.response.externalcontact.*;
 import com.wdf.resquest.externalcontact.*;
 import org.springframework.cloud.openfeign.FeignClient;
@@ -20,7 +18,7 @@ import org.springframework.web.bind.annotation.RequestParam;
  * @author ddshuai
  * date 2022-08-31 22:20
  **/
-@FeignClient(name = "ExternalContact", url = "${qywx.url:https://qyapi.weixin.qq.com}", path = "${qywx.public-path:cgi-bin}", configuration = WeChatConfiguration.class)
+@FeignClient(name = "ExternalContact", url = "${work-wechat.url:https://qyapi.weixin.qq.com}", path = "${work-wechat.public-path:cgi-bin}", configuration = WeChatConfiguration.class)
 public interface ExternalContactClient extends CommonClient {
     /**
      * 获取配置了客户联系功能的成员列表

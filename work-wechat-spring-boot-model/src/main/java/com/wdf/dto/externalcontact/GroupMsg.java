@@ -2,7 +2,6 @@ package com.wdf.dto.externalcontact;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.databind.annotation.JsonDeserialize;
-import com.github.shuaidd.dto.message.*;
 import com.wdf.dto.message.*;
 import com.wdf.json.Long2DateDeserializer;
 import org.apache.commons.lang3.builder.ToStringBuilder;

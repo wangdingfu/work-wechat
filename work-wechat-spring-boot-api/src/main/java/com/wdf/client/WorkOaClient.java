@@ -2,15 +2,12 @@ package com.wdf.client;
 
 import com.wdf.client.config.WeChatConfiguration;
 import com.wdf.response.BaseResponse;
-import com.github.shuaidd.response.oa.*;
 import com.wdf.response.tool.AddScheduleResponse;
 import com.wdf.response.tool.CalendarResponse;
 import com.wdf.response.tool.GetCalendarResponse;
 import com.wdf.response.tool.GetScheduleResponse;
 import com.wdf.resquest.JournalReportStatRequest;
 import com.wdf.resquest.kf.PunchCorrectionRequest;
-import com.github.shuaidd.resquest.oa.*;
-import com.github.shuaidd.resquest.tool.*;
 import com.wdf.response.oa.*;
 import com.wdf.resquest.oa.*;
 import com.wdf.resquest.tool.*;
@@ -25,7 +22,7 @@ import org.springframework.web.bind.annotation.RequestParam;
  * @author ddshuai
  * date 2022-08-31 22:28
  **/
-@FeignClient(name = "WorkOAClient", url = "${qywx.url:https://qyapi.weixin.qq.com}", path = "${qywx.public-path:cgi-bin}", configuration = WeChatConfiguration.class)
+@FeignClient(name = "WorkOAClient", url = "${work-wechat.url:https://qyapi.weixin.qq.com}", path = "${work-wechat.public-path:cgi-bin}", configuration = WeChatConfiguration.class)
 public interface WorkOaClient extends CommonClient {
     /**
      * 创建日历

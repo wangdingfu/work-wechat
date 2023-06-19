@@ -14,7 +14,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 /**
  * 企业互联
  */
-@FeignClient(name = "EnterpriseInterConnectionClient", url = "${qywx.url:https://qyapi.weixin.qq.com}", path = "${qywx.public-path:cgi-bin}", configuration = WeChatConfiguration.class)
+@FeignClient(name = "EnterpriseInterConnectionClient", url = "${work-wechat.url:https://qyapi.weixin.qq.com}", path = "${work-wechat.public-path:cgi-bin}", configuration = WeChatConfiguration.class)
 public interface EnterpriseInterConnectionClient extends CommonClient {
 
     /**

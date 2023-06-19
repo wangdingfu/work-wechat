@@ -2,7 +2,6 @@ package com.wdf.support;
 
 import com.wdf.enums.ChangeType;
 import com.wdf.enums.MsgType;
-import com.github.shuaidd.event.*;
 import com.wdf.event.*;
 import org.apache.commons.lang3.StringUtils;
 import org.slf4j.Logger;

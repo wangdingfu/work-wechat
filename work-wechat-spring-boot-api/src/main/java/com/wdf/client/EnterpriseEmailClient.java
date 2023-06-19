@@ -2,8 +2,6 @@ package com.wdf.client;
 
 import com.wdf.client.config.WeChatConfiguration;
 import com.wdf.response.BaseResponse;
-import com.github.shuaidd.response.exmail.*;
-import com.github.shuaidd.resquest.exmail.*;
 import com.wdf.response.exmail.*;
 import com.wdf.resquest.exmail.*;
 import org.springframework.cloud.openfeign.FeignClient;
@@ -14,7 +12,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 /**
  * 企业邮箱管理
  */
-@FeignClient(name = "EnterpriseEmailClient", url = "${qywx.url:https://qyapi.weixin.qq.com}", path = "${qywx.public-path:cgi-bin}", configuration = WeChatConfiguration.class)
+@FeignClient(name = "EnterpriseEmailClient", url = "${work-wechat.url:https://qyapi.weixin.qq.com}", path = "${work-wechat.public-path:cgi-bin}", configuration = WeChatConfiguration.class)
 public interface EnterpriseEmailClient extends CommonClient {
 
     /**

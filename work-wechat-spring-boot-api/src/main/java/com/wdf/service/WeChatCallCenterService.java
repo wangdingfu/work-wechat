@@ -2,8 +2,6 @@ package com.wdf.service;
 
 import com.wdf.exception.ParamCheckException;
 import com.wdf.exception.WeChatException;
-import com.github.shuaidd.response.kf.*;
-import com.github.shuaidd.resquest.kf.*;
 import com.wdf.response.kf.*;
 import com.wdf.resquest.kf.*;
 import org.apache.commons.lang3.StringUtils;

@@ -1,6 +1,5 @@
 package com.wdf.service;
 
-import com.github.shuaidd.client.*;
 import com.wdf.client.*;
 import com.wdf.client.config.ApplicationProperties;
 import com.wdf.client.config.WeChatConfigurationProperties;

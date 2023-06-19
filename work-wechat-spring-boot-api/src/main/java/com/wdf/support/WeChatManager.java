@@ -1,7 +1,6 @@
 package com.wdf.support;
 
 import com.wdf.client.config.WeChatConfigurationProperties;
-import com.github.shuaidd.service.*;
 import com.wdf.service.*;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;

@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.PostMapping;
  * @author ddshuai
  * date 2022-09-05 21:52
  **/
-@FeignClient(name = "ServiceProviderClient", url = "${qywx.url:https://qyapi.weixin.qq.com}", path = "${qywx.public-path:cgi-bin}")
+@FeignClient(name = "ServiceProviderClient", url = "${work-wechat.url:https://qyapi.weixin.qq.com}", path = "${work-wechat.public-path:cgi-bin}")
 public interface ServiceProviderClient {
 
     /**

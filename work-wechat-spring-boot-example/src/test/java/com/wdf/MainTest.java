@@ -1,6 +1,5 @@
 package com.wdf;
 
-import com.github.shuaidd.event.*;
 import com.wdf.event.*;
 import com.wdf.support.XMLUtil;
 import com.google.common.collect.Lists;
