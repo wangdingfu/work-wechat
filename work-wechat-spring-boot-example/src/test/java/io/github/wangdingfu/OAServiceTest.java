@@ -41,7 +41,7 @@ public class OAServiceTest extends AbstractTest {
     public static final String CHECK_IN = "check-in";
 
     /*审批应用*/
-    public static final String APPROVE = "approval-test";
+    public static final String APPROVE = "example";
 
     /*汇报应用*/
     public static final String REPORT = "report";

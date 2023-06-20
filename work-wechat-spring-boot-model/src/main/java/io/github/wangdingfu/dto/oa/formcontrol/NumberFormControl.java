@@ -1,7 +1,9 @@
 package io.github.wangdingfu.dto.oa.formcontrol;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
+import org.apache.commons.lang3.StringUtils;
 
+import java.util.Objects;
 import java.util.StringJoiner;
 
 /**
@@ -20,6 +22,14 @@ public class NumberFormControl implements ApplyFormControl {
     }
 
     public void setNumber(String number) {
+        this.number = number;
+    }
+
+    public NumberFormControl(Object value) {
+        this.number = Objects.isNull(value) ? StringUtils.EMPTY : value.toString();
+    }
+
+    public NumberFormControl(String number) {
         this.number = number;
     }
 

@@ -19,6 +19,13 @@ public class FileData {
         return fileId;
     }
 
+    public FileData(String fileId) {
+        this.fileId = fileId;
+    }
+
+    public FileData() {
+    }
+
     public void setFileId(String fileId) {
         this.fileId = fileId;
     }

@@ -1,5 +1,8 @@
 package io.github.wangdingfu.dto.oa.formcontrol;
 
+import org.apache.commons.lang3.StringUtils;
+
+import java.util.Objects;
 import java.util.StringJoiner;
 
 /**
@@ -18,6 +21,14 @@ public class TextFormControl implements ApplyFormControl {
 
     public void setText(String text) {
         this.text = text;
+    }
+
+    public TextFormControl(String text) {
+        this.text = text;
+    }
+
+    public TextFormControl(Object value) {
+        this.text = Objects.isNull(value) ? StringUtils.EMPTY : value.toString();
     }
 
     @Override

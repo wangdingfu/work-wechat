@@ -2,6 +2,7 @@ package io.github.wangdingfu.dto.oa.formcontrol;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 
+import java.util.Objects;
 import java.util.StringJoiner;
 
 /**
@@ -25,6 +26,10 @@ public class MoneyFormControl implements ApplyFormControl {
 
     public MoneyFormControl(String money) {
         this.money = money;
+    }
+
+    public MoneyFormControl(Object money) {
+        this.money = Objects.isNull(money) ? "" : money.toString();
     }
 
     public MoneyFormControl() {
