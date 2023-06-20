@@ -1,5 +1,6 @@
 package io.github.wangdingfu.client.config;
 
+import org.springframework.boot.autoconfigure.condition.ConditionalOnMissingBean;
 import org.springframework.boot.context.properties.ConfigurationProperties;
 
 import java.util.List;
@@ -10,6 +11,7 @@ import java.util.List;
  * @author ddshuai
  * date 2019-04-03 15:47
  **/
+@ConditionalOnMissingBean
 @ConfigurationProperties(prefix = "work-wechat")
 public class WeChatConfigurationProperties {
 
