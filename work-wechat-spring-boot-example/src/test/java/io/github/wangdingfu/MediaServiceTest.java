@@ -24,7 +24,7 @@ import java.io.IOException;
  **/
 public class MediaServiceTest extends AbstractTest {
 
-    public static final String ADDRESS_BOOK = "address-book";
+    public static final String ADDRESS_BOOK = "example";
 
     /**
      * 客户联系功能编码 与配置文件内定义的别名【application-name】一致
@@ -50,7 +50,7 @@ public class MediaServiceTest extends AbstractTest {
      */
     @Test
     public void uploadMaterial() throws FileNotFoundException {
-        File file = ResourceUtils.getFile("classpath:video/1626849301272424.mp4");
+        File file = ResourceUtils.getFile("classpath:excel/boyue-wechat01.xlsx");
         String mediaId = weChatManager.mediaService().uploadMaterial(file, MediaType.APPLICATION_OCTET_STREAM, MediaService.VIDEO, ADDRESS_BOOK);
         logger.info("上传的临时素材 media id--{}", mediaId);
     }
