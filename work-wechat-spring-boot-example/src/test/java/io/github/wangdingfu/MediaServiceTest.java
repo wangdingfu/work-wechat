@@ -24,7 +24,7 @@ import java.io.IOException;
  **/
 public class MediaServiceTest extends AbstractTest {
 
-    public static final String ADDRESS_BOOK = "example";
+    public static final String ADDRESS_BOOK = "approval-test";
 
     /**
      * 客户联系功能编码 与配置文件内定义的别名【application-name】一致

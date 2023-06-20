@@ -25,9 +25,9 @@ import java.util.Map;
  * @author ddshuai
  * @date 2022-09-01 15:10
  **/
-@Configuration
-@RequiredArgsConstructor
-@EnableCaching
+//@Configuration
+//@RequiredArgsConstructor
+//@EnableCaching
 public class RedisConfig extends CachingConfigurerSupport {
 
     /**

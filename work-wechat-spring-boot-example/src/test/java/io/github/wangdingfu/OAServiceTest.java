@@ -1,5 +1,6 @@
 package io.github.wangdingfu;
 
+import cn.hutool.json.JSONUtil;
 import com.fasterxml.jackson.core.JsonProcessingException;
 import io.github.wangdingfu.dto.checkin.CheckInData;
 import io.github.wangdingfu.dto.checkin.CheckInRule;
@@ -40,7 +41,7 @@ public class OAServiceTest extends AbstractTest {
     public static final String CHECK_IN = "check-in";
 
     /*审批应用*/
-    public static final String APPROVE = "approve";
+    public static final String APPROVE = "approval-test";
 
     /*汇报应用*/
     public static final String REPORT = "report";
@@ -136,9 +137,9 @@ public class OAServiceTest extends AbstractTest {
     @Test
     public void getTemplateDetail() {
         TemplateRequest request = new TemplateRequest();
-        request.setTemplateId("BsAd7RkLz1aRGJ53jbpnypWcBoHkmsMgqjKVjnSJn");
+        request.setTemplateId("3WLJeeZiyN9ZLxEWQdvnpxwTAphwMXVFn1cUqYw9");
         ApproveTemplateResponse response = weChatManager.oaService().getTemplateDetail(request, APPROVE);
-        logger.info("获取审批模板详情数据--{}", response);
+        logger.info("获取审批模板详情数据--{}", JSONUtil.toJsonStr(response));
     }
 
     /**
@@ -235,9 +236,9 @@ public class OAServiceTest extends AbstractTest {
     @Test
     public void getApprovalDetail() {
         ApprovalDetailRequest request = new ApprovalDetailRequest();
-        request.setSpNo("202107160001");
+        request.setSpNo("202306200002");
         ApprovalDetailResponse response = weChatManager.oaService().getApprovalDetail(request, APPROVE);
-        logger.info("获取审批申请详情--{}", response);
+        logger.info("获取审批申请详情--{}", JSONUtil.toJsonStr(response));
     }
 
     @Test

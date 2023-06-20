@@ -19,7 +19,15 @@ import java.util.List;
 public class AddressBookTest extends AbstractTest {
 
     /*通讯录应用*/
-    public static final String appName = "address-book";
+    public static final String appName = "approval-test";
+
+    /**
+     * 创建用户
+     */
+    @Test
+    public void accessToken() {
+        System.out.println(weChatManager.tokenService().getAccessToken(appName));
+    }
 
     /**
      * 创建用户
