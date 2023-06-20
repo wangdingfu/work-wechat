@@ -27,6 +27,9 @@ public class TextFormControl implements ApplyFormControl {
         this.text = text;
     }
 
+    public TextFormControl() {
+    }
+
     public TextFormControl(Object value) {
         this.text = Objects.isNull(value) ? StringUtils.EMPTY : value.toString();
     }

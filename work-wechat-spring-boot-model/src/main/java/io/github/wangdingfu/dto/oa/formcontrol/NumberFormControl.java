@@ -33,6 +33,9 @@ public class NumberFormControl implements ApplyFormControl {
         this.number = number;
     }
 
+    public NumberFormControl() {
+    }
+
     @Override
     public String toString() {
         return new StringJoiner(", ", NumberFormControl.class.getSimpleName() + "[", "]")
