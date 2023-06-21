@@ -7,7 +7,7 @@
     <groupId>io.github.wangdingfu</groupId>
     <artifactId>work-wechat</artifactId>
     <packaging>pom</packaging>
-    <version>2.3.0</version>
+    <version>2.3.1</version>
     <modules>
         <module>work-wechat-spring-boot-starter</module>
         <module>work-wechat-spring-boot-autoconfigure</module>
@@ -214,4 +214,23 @@
         <system>Github</system>
         <url>https://github.com/wangdingfu/work-wechat/issues</url>
     </issueManagement>
+
+
+    <developers>
+        <developer>
+            <name>wangdingfu</name>
+            <email>wangdingfu1024@163.com</email>
+            <organization>https://github.com/wangdingfu</organization>
+        </developer>
+    </developers>
+
+
+    <licenses>
+        <license>
+            <name>The Apache Software License, Version 2.0</name>
+            <url>http://www.apache.org/licenses/LICENSE-2.0.txt</url>
+            <distribution>repo</distribution>
+        </license>
+
+    </licenses>
 </project>
