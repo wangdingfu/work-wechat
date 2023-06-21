@@ -137,7 +137,7 @@ public class OAServiceTest extends AbstractTest {
     @Test
     public void getTemplateDetail() {
         TemplateRequest request = new TemplateRequest();
-        request.setTemplateId("3WLJeeZiyN9ZLxEWQdvnpxwTAphwMXVFn1cUqYw9");
+        request.setTemplateId("3WLJeeawiNYux34BWkDfduNTdKdiSTq86LaU6CBH");
         ApproveTemplateResponse response = weChatManager.oaService().getTemplateDetail(request, APPROVE);
         logger.info("获取审批模板详情数据--{}", JSONUtil.toJsonStr(response));
     }
@@ -236,7 +236,7 @@ public class OAServiceTest extends AbstractTest {
     @Test
     public void getApprovalDetail() {
         ApprovalDetailRequest request = new ApprovalDetailRequest();
-        request.setSpNo("202306200002");
+        request.setSpNo("202306210003");
         ApprovalDetailResponse response = weChatManager.oaService().getApprovalDetail(request, APPROVE);
         logger.info("获取审批申请详情--{}", JSONUtil.toJsonStr(response));
     }

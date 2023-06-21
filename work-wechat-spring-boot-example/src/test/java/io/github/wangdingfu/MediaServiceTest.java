@@ -51,7 +51,7 @@ public class MediaServiceTest extends AbstractTest {
     @Test
     public void uploadMaterial() throws FileNotFoundException {
         File file = ResourceUtils.getFile("classpath:excel/boyue-wechat01.xlsx");
-        String mediaId = weChatManager.mediaService().uploadMaterial(file, MediaType.APPLICATION_OCTET_STREAM, MediaService.VIDEO, ADDRESS_BOOK);
+        String mediaId = weChatManager.mediaService().uploadMaterial(file, MediaType.APPLICATION_OCTET_STREAM, MediaService.FILE, ADDRESS_BOOK);
         logger.info("上传的临时素材 media id--{}", mediaId);
     }
 
